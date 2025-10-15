@@ -1,14 +1,10 @@
-const { withContentlayer } = require('next-contentlayer2');
+/**
+ * Run `build` or `dev` with `SKIP_ENV_VALIDATION` to skip env validation. This is especially useful
+ * for Docker builds.
+ */
+import "./src/env.js";
 
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-    reactStrictMode: true,
-    swcMinify: true,
-    output: "export",
-    basePath: "",
-    images: {
-        unoptimized: true,
-    },
-}
+/** @type {import("next").NextConfig} */
+const config = {};
 
-module.exports = withContentlayer(nextConfig)
+export default config;
