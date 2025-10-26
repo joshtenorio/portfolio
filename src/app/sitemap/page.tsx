@@ -1,3 +1,3 @@
-export default function Sitemap() {
-  return <div>hehez</div>;
+export default function SitemapPage() {
+  return <div>{/* Content coming soon */}</div>;
 }
