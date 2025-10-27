@@ -20,7 +20,7 @@ export default function ProjectsPage() {
       id: "glassypdm",
       title: "glassyPDM",
       description:
-        "A simple product data management system. This project uses a custom version control system allowing for users to selectively download and upload files to a shared folder.",
+        "A simple product data management system. I developed a custom version control system to allow for users to selectively download and upload files to a shared folder.",
       href: "/projects/glassypdm",
       tags: ["TypeScript", "Rust", "Go", "React", "Tauri"],
       timeline: "Started August 2023",
@@ -41,7 +41,7 @@ export default function ProjectsPage() {
         "C",
         "Python",
       ],
-      timeline: "August 2021 - May 2024",
+      timeline: "September 2021 - May 2024",
     },
     {
       id: "sc2ai",
