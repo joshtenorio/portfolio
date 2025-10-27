@@ -56,7 +56,7 @@ export function Navbar() {
                   >
                     <span
                       className={`absolute left-2 size-1.5 rounded-full ${
-                        isActive(item.href) ? "bg-red-600" : "bg-transparent"
+                        isActive(item.href) ? "bg-primary" : "bg-transparent"
                       }`}
                     />
                     <span>{item.label}</span>

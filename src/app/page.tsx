@@ -1,5 +1,5 @@
 import InlineLink from "@/components/inline-link";
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import { SquareArrowOutUpRight, TriangleAlert } from "lucide-react";
