@@ -1,5 +1,6 @@
 import React from "react";
-import Link, { LinkProps as NextLinkProps } from "next/link";
+import Link from "next/link";
+import type { LinkProps as NextLinkProps } from "next/link";
 import { cn } from "@/lib/utils";
 
 interface InlineLinkProps extends Omit<NextLinkProps, "as"> {

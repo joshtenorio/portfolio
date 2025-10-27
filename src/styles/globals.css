@@ -5,8 +5,11 @@
 
 @theme {
   --font-sans:
-    Verdana, Geneva, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    var(--font-ibm-plex-serif), ui-serif, Georgia, Cambria, "Times New Roman",
+    Times, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+
+  --font-sans-testing: Verdana, Geneva, ui-sans-serif;
 }
 
 @theme inline {

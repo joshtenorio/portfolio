@@ -3,6 +3,7 @@ import { Navbar } from "@/components/navbar";
 import "@/styles/globals.css";
 
 import { type Metadata } from "next";
+import { IBM_Plex_Serif } from "next/font/google";
 
 export const metadata: Metadata = {
   title: "jxorio.dev - Josh Tenorio",
@@ -10,11 +11,17 @@ export const metadata: Metadata = {
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 
+const ibmPlexSerif = IBM_Plex_Serif({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+  variable: "--font-ibm-plex-serif",
+});
+
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={ibmPlexSerif.variable}>
       <body className="bg-background min-h-screen">
         <ThemeProvider
           attribute={"class"}
