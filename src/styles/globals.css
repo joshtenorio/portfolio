@@ -5,8 +5,8 @@
 
 @theme {
   --font-sans:
-    var(--font-roboto), ui-sans-serif, system-ui, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    Verdana, Geneva, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 @theme inline {
@@ -51,8 +51,8 @@
   --radius: 0;
   --background: oklch(0.95 0 0);
   --foreground: oklch(0.141 0.005 285.823);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.141 0.005 285.823);
+  --card: oklch(0.9913 0.0029 84.56);
+  --card-foreground: oklch(0.2178 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.141 0.005 285.823);
   --primary: oklch(0.645 0.246 16.439);

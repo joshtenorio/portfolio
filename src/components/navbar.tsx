@@ -23,7 +23,7 @@ export function Navbar() {
   return (
     <nav className="border-border bg-card w-full border-b">
       <div className="px-4 pt-4 pb-2">
-        <Link href="/" className="inline-block font-bold hover:text-blue-600">
+        <Link href="/" className="hover:text-primary inline-block font-bold">
           jxorio.dev
         </Link>
       </div>

@@ -3,7 +3,6 @@ import { Navbar } from "@/components/navbar";
 import "@/styles/globals.css";
 
 import { type Metadata } from "next";
-import { Roboto } from "next/font/google";
 
 export const metadata: Metadata = {
   title: "jxorio.dev - Josh Tenorio",
@@ -11,17 +10,11 @@ export const metadata: Metadata = {
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 
-const roboto = Roboto({
-  subsets: ["latin"],
-  weight: ["400", "500", "700"],
-  variable: "--font-roboto",
-});
-
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={roboto.variable}>
+    <html lang="en">
       <body className="bg-background min-h-screen">
         <ThemeProvider
           attribute={"class"}
@@ -30,7 +23,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <div className="flex min-h-screen items-center justify-center p-4 md:p-8">
-            <div className="bg-card flex min-h-screen w-full max-w-4xl flex-col shadow-[4px_4px_0_0_rgba(0,0,0,0.1)]">
+            <div className="bg-card flex min-h-screen w-full max-w-4xl flex-col border shadow-[4px_4px_0_0_rgba(0,0,0,0.1)]">
               <Navbar />
               {children}
             </div>

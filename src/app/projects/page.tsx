@@ -13,7 +13,7 @@ export default function ProjectsPage() {
       description:
         "A simple product data management system. This project showcases a custom version control system allowing for users to selectively download and upload files to a shared folder.",
       href: "/projects/glassypdm",
-      tags: ["React", "TypeScript", "Rust", "Tauri", "Go"],
+      tags: ["TypeScript", "Rust", "Go", "React", "Tauri"],
       timeline: "Started August 2023",
     },
     {
@@ -34,7 +34,13 @@ export default function ProjectsPage() {
       description:
         "A custom data acquisition system for a formula-style race car. I was responsible for PCB design, firmware development, basic data analysis, and wiring.",
       href: "/projects/fsae-daq",
-      tags: ["Embedded Systems", "C", "PCB Design", "Python", "Data Analysis"],
+      tags: [
+        "Embedded Systems",
+        "PCB Design",
+        "Data Visualization",
+        "C",
+        "Python",
+      ],
       timeline: "August 2021 - May 2024",
     },
     {
