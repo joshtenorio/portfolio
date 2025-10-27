@@ -8,22 +8,22 @@ import { ArrowRight, SquareArrowOutUpRight } from "lucide-react";
 export default function ProjectsPage() {
   const ongoingProjects = [
     {
-      id: "glassypdm",
-      title: "glassyPDM",
-      description:
-        "A simple product data management system. This project showcases a custom version control system allowing for users to selectively download and upload files to a shared folder.",
-      href: "/projects/glassypdm",
-      tags: ["TypeScript", "Rust", "Go", "React", "Tauri"],
-      timeline: "Started August 2023",
-    },
-    {
       id: "combat-robots",
       title: "Combat Robotics",
       description:
-        "Designing and building competitive combat robots for various weight classes, involving mechanical design and electronics integration.",
+        "Competitive combat robots designed and built for various weight classes, involving mechanical design and electronics integration.",
       href: "/projects/combat-robots",
       tags: ["Mechanical Design", "Electronics", "CAD"],
       timeline: "Competing since February 2025",
+    },
+    {
+      id: "glassypdm",
+      title: "glassyPDM",
+      description:
+        "A simple product data management system. This project uses a custom version control system allowing for users to selectively download and upload files to a shared folder.",
+      href: "/projects/glassypdm",
+      tags: ["TypeScript", "Rust", "Go", "React", "Tauri"],
+      timeline: "Started August 2023",
     },
   ];
 
@@ -74,7 +74,7 @@ export default function ProjectsPage() {
               <p className="text-muted-foreground text-sm">
                 {project.timeline}
               </p>
-              <p className="text-muted-foreground">{project.description}</p>
+              <p className="text-foreground">{project.description}</p>
               <div className="flex flex-wrap gap-2">
                 {project.tags.map((tag) => (
                   <Badge key={tag} variant="secondary">

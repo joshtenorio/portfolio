@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 export function Navbar() {
   const pathname = usePathname();
@@ -22,10 +23,11 @@ export function Navbar() {
 
   return (
     <nav className="border-border bg-card w-full border-b">
-      <div className="px-4 pt-4 pb-2">
+      <div className="flex items-center justify-between px-4 pt-4 pb-2">
         <Link href="/" className="hover:text-primary inline-block font-bold">
           jxorio.dev
         </Link>
+        <ThemeToggle />
       </div>
       <div className="flex flex-wrap gap-2 px-4 pb-4">
         {navItems.map((item) => (
@@ -36,7 +38,7 @@ export function Navbar() {
             >
               <span
                 className={`absolute left-2 size-1.5 rounded-full ${
-                  isActive(item.href) ? "bg-red-600" : "bg-transparent"
+                  isActive(item.href) ? "bg-primary" : "bg-transparent"
                 }`}
               />
               <span>{item.label}</span>

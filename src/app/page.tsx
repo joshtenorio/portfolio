@@ -1,16 +1,23 @@
 import InlineLink from "@/components/inline-link";
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
-import { SquareArrowOutUpRight } from "lucide-react";
+import { SquareArrowOutUpRight, TriangleAlert } from "lucide-react";
+import Link from "next/link";
 
 export default function HomePage() {
   return (
     <div className="flex flex-col gap-12 p-8">
+      <Alert variant={"destructive"}>
+        <AlertDescription className="flex items-center gap-2">
+          <TriangleAlert className="size-4 shrink-0" />
+          Please mind the dust while I build this website :)
+        </AlertDescription>
+      </Alert>
       {/* Header Section */}
       <section className="flex flex-col gap-6 md:flex-row md:gap-8">
         <div className="flex flex-1 flex-col gap-3">
           <h1 className="text-3xl font-bold">Joshua Tenorio</h1>
-          <p className="text-muted-foreground text-lg">Software Engineer</p>
           <p className="">
             I&apos;m a Software Engineer living in Chandler, Arizona. My hobbies
             include building combat robots, playing video games, and keeping up
@@ -26,12 +33,19 @@ export default function HomePage() {
       {/* links Section */}
       <section className="flex flex-col gap-6 md:flex-row md:gap-8">
         <div className="flex flex-1 flex-row gap-3">
-          <Button variant={"paper"}>
-            GitHub
-            <SquareArrowOutUpRight className="ml-2" />
+          <Button variant={"paper"} asChild>
+            <Link href={"https://github.com/joshtenorio"} target="_blank">
+              GitHub
+              <SquareArrowOutUpRight className="ml-2" />
+            </Link>
           </Button>
-          <Button variant={"paper"}>
-            LinkedIn <SquareArrowOutUpRight className="ml-2" />
+          <Button variant={"paper"} asChild>
+            <Link
+              href={"https://www.linkedin.com/in/joshuatenorio/"}
+              target="_blank"
+            >
+              LinkedIn <SquareArrowOutUpRight className="ml-2" />
+            </Link>
           </Button>
         </div>
       </section>
