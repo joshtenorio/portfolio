@@ -31,6 +31,7 @@ export default function CombatRobotsPage() {
     <div className="flex flex-col gap-12 p-8">
       <section>
         <h1 className="mb-6 text-center text-3xl font-bold">Combat Robotics</h1>
+        <div className="mb-6 text-center">{/* TODO: add description */}</div>
         <div className="text-foreground flex flex-col gap-8">
           {robots.map((robot, index) => (
             <CombatRobotCard key={index} robot={robot} />
