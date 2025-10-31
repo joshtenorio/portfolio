@@ -3,6 +3,7 @@ import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import { SquareArrowOutUpRight, TriangleAlert } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function HomePage() {
@@ -27,7 +28,12 @@ export default function HomePage() {
         </div>
 
         <div className="md:w-64">
-          <Skeleton className="aspect-square w-full" />
+          <Image
+            src="https://3qslpz2d4s.ufs.sh/f/BEAnWrmyVH5IZpQNSLBapdb723HSD4uimOUsnoe9L5tqlFaR"
+            alt="self"
+            width={200}
+            height={200}
+          ></Image>
         </div>
       </section>
       {/* links Section */}
