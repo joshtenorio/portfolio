@@ -23,7 +23,7 @@ export default function NowPage() {
       </div>
       <div className="pt-4 text-center text-xl font-semibold">Garmin</div>
       <div className="text-center">
-        Currently I am a Software Engineer 1 at Garmin after interning there the
+        Currently I am a Software Engineer 2 at Garmin after interning there the
         past two summers in 2022 and 2023.
       </div>
       <div className="pt-4 text-center text-xl font-semibold">
