@@ -21,7 +21,7 @@ export default function HomePage() {
           <h1 className="text-3xl font-bold">Joshua Tenorio</h1>
           <p className="">
             I&apos;m a Software Engineer living in Chandler, Arizona. My hobbies
-            include building combat robots, playing video games, and keeping up
+            include building combat robots, playing Riftbound, and keeping up
             with Formula 1. Find out what I&apos;m doing{" "}
             <InlineLink href={"/now"}>now</InlineLink>.
           </p>

@@ -7,8 +7,8 @@ const robots: CombatRobot[] = [
   {
     name: "popcat",
     weightClass: "1lb",
-    fightRecord: { wins: 5, losses: 6 },
-    numEvents: 3,
+    fightRecord: { wins: 7, losses: 8 },
+    numEvents: 4,
     podiums: [
       {
         place: 3,
@@ -20,9 +20,10 @@ const robots: CombatRobot[] = [
   {
     name: "pop-pop-popcat",
     weightClass: "3lb",
-    fightRecord: { wins: 0, losses: 0 },
-    numEvents: 0,
+    fightRecord: { wins: 1, losses: 3 },
+    numEvents: 1,
     podiums: [],
+    slug: "pop-pop-popcat",
   },
 ];
 

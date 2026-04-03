@@ -23,7 +23,7 @@ export function Navbar() {
   const navItems = [
     { href: "/", label: "front matter" },
     { href: "/projects", label: "projects" },
-    { href: "/sitemap", label: "sitemap" },
+    //{ href: "/sitemap", label: "sitemap" },
   ];
 
   const isActive = (href: string) => {

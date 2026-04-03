@@ -34,13 +34,6 @@ export default function NowPage() {
         (1-pound) and beetleweight (3-pound) weight classes in events in the
         United States.
       </div>
-      <div className="pt-4 text-center text-xl font-semibold">glassyPDM</div>
-      <div className="text-center">
-        Outside of Garmin, I work on an open-source product data management
-        software called glassyPDM. It was born in fall 2023, when my Formula SAE
-        team needed a PDM solution when GrabCAD Workbench shut down a few months
-        prior.
-      </div>
     </div>
   );
 }
